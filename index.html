@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head> 
+        <title> JQuery </title>
+        <meta charset="utf-8">    
+        <style>
+            #slider {
+                width: 800px;
+                height: 800px;
+                margin: 0 auto;
+                position: relative;
+            }
+
+            #slider li {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+            }
+
+            #slider li img {
+                height: 100%;
+                width: 100%;
+            }
+
+            #slider-pager {
+                width: 100%;
+                text-align: center;
+                margin-top: 50px;
+
+            }
+
+            #slider-pager a {
+                text-decoration: none;
+                background-color: #ccc;
+                margin-right: 30px;
+                padding: 10px 20px;
+                height: 0;
+                border-radius: 100px;
+            }
+
+            #slider-pager .activeSlide {
+                background-color: #888;
+            }
+        </style>
+    </head>
+    <body>
+        <ul id="slider">
+            <li> <img src="images/landscape1.jpg" alt="Paisagem Um" title="P1"> </li>
+            <li> <img src="images/landscape2.jpg" alt="Paisagem Dois" title="P2"> </li>
+            <li> <img src="images/landscape3.jpg" alt="Paisagem Três" title="P3"> </li>
+            <li> <img src="images/landscape4.jpg" alt="Paisagem Quatro" title="P4"> </li>
+        </ul>
+        <div id="slider-pager"></div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js"></script>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
